@@ -5,7 +5,7 @@ COSTO_MAXIMO = 600
 solutions = []
 
 items = [
-  # B,P
+  # [Beneficio, Peso]
   [15, 40],
   [12, 28],
   [10, 22],
@@ -44,7 +44,6 @@ results = solutions.map do |i|
    items.map(&:last).zip(i).map { |x, y| x * y }.sum]
 end
 
-
 benefits = results.map(&:first)
 solution_index = benefits.index benefits.max
 solution = solutions[solution_index]
@@ -58,4 +57,4 @@ end
 
 puts "\nSolución:"
 pp solution
-pp [:Beneficio,:Peso].zip(results[solution_index]).to_h
+pp %i[Beneficio Peso].zip(results[solution_index]).to_h
