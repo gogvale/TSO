@@ -1,17 +1,19 @@
-DEBUG = false
+# Tecnica del vecindario
+
+DEBUG = true
 COSTO_MAXIMO = 600
 solutions = []
 
 items = [
   # [Beneficio, Peso]
-  [15, 40],
-  [12, 28],
-  [10, 22],
-  [13, 30],
-  [22, 54],
-  [16, 38],
-  [10, 24],
-  [14, 35]
+  [40, 15],
+  [28, 12],
+  [22, 10],
+  [30, 13],
+  [54, 22],
+  [38, 16],
+  [24, 10],
+  [35, 14]
 ]
 
 b_p = items.map { |i, j| j.to_f / i }
