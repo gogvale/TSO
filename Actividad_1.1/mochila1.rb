@@ -1,6 +1,4 @@
-require 'pry'
-
-debug = true
+DEBUG = false
 COSTO_MAXIMO = 600
 solutions = []
 
@@ -50,7 +48,7 @@ solution = solutions[solution_index]
 # most_valuable_item_count = solution.pop
 # solution.insert(most_valuable_item_index, most_valuable_item_count)
 
-if debug
+if DEBUG
   puts 'Posibilidades:'
   pp solutions
 end
