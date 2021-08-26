@@ -1,4 +1,3 @@
-require 'pry'
 MAXIMO = 60
 
 items = [

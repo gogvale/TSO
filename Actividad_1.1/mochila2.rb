@@ -1,6 +1,6 @@
 # Tecnica del vecindario
 
-DEBUG = true
+DEBUG = false
 COSTO_MAXIMO = 600
 solutions = []
 
