@@ -6,7 +6,7 @@ solutions = []
 
 items = [
   # [Beneficio, Peso]
-  [40, 15],
+  [35, 15],
   [28, 12],
   [22, 10],
   [30, 13],
@@ -16,7 +16,7 @@ items = [
   [35, 14]
 ]
 
-b_p = items.map { |i, j| j.to_f / i }
+b_p = items.map { |i, j| i.to_f / j }
 most_valuable_item_index = b_p.index b_p.max
 most_valuable_item = items.delete_at most_valuable_item_index
 
