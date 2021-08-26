@@ -1,5 +1,3 @@
-require 'pry'
-
 PESO_MAXIMO = 600
 VOLUMEN_MAXIMO = 1500
 DEBUG = false
