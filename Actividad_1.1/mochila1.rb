@@ -13,7 +13,6 @@ items = [
   [25, 33]
 ]
 
-# bin_matrix = (0..2**items.size - 1).map { |i| ("%0#{items.size}d" % i.to_s(2)).split('').map(&:to_i) }
 bin_matrix = (0..2**items.size - 1).map { |i| i.to_s(2).rjust(items.size, '0').split('').map(&:to_i) }
 results = bin_matrix.map.with_index(0)  do |i, index|
   [
